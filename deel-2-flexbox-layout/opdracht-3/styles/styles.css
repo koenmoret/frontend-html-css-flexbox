@@ -1,1 +1,55 @@
-/*Schrijf hier jouw CSS*/
+/*GLOBAL*/
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+/*OPDRACHT 3*/
+body {
+    display: flex;
+    flex-direction: row;
+    min-height: 100vH;
+}
+.col-1 {
+    flex-basis: 200px;
+    flex-grow: 0;
+    flex-shrink: 0;
+}
+.col-2 {
+    /*border: 1px dashed red;*/
+    display: flex;
+    flex-direction: column;
+    flex-basis: 100%;
+    min-height: 100vH;
+    flex-grow: 1;
+    flex-shrink: 1;
+}
+header {
+    height: 80px;
+    flex-grow: 0;
+    flex-shrink: 0;
+}
+.section-wrapper {
+    /*border: 1px dashed yellow;*/
+    display: flex;
+    flex-direction: row;
+    height: 100%;
+}
+.section-article {
+    /*border: 1px dashed brown;*/
+    flex-basis: 100%;
+    flex-grow: 1;
+    flex-shrink: 1;
+}
+.section-aside {
+    /*border: 1px dashed orange;*/
+    flex-basis: 200px;
+    flex-grow: 0;
+    flex-shrink: 0;
+}
+footer {
+    height: 80px;
+    flex-grow: 0;
+    flex-shrink: 0;
+}
