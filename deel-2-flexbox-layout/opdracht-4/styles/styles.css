@@ -14,6 +14,8 @@ body {
 
 .outer-col-1 {
     flex-basis: 200px;
+    flex-grow: 0;
+    flex-shrink: 0;
 }
 .outer-col-2 {
     display: flex;
@@ -22,14 +24,29 @@ body {
 }
 header {
     height: 80px;
+    flex-grow: 0;
+    flex-shrink: 0;
 }
 .inner-row {
     display: flex;
     flex-direction: row;
+    height: 100%;
 }
 .inner-col {
     flex-basis: 100%;
 }
+article {
+    height: calc(100% - 80px);
+    flex-grow: 1;
+    flex-shrink: 1;
+}
+footer {
+    height: 80px;
+    flex-grow: 0;
+    flex-shrink: 0;
+}
 aside {
     flex-basis: 200px;
+    flex-grow: 0;
+    flex-shrink: 0;
 }
