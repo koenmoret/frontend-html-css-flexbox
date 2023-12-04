@@ -23,6 +23,7 @@ Table of Contents:
     --color-beige: #F2F3D9;
     --color-buff: #DC9E82;
     --color-old-rose: #C16E70;
+    --color-white: #FFF;
 }
 body {
     min-height: 100vH;
@@ -40,7 +41,7 @@ h1 {
 h3 {
     font-size: 10px;
 }
-p {
+p, span, li  {
     font-size: 10px;
 }
 
@@ -55,31 +56,40 @@ p {
     flex-direction: row;
     height: 40px;
     padding: 0 40px;
-    border: 1px dashed orangered;
+    background-color: var(--color-oxford-blue);
+    /*border: 1px dashed orangered;*/
 }
 .header-container {
     display: flex;
     flex-direction: row;
     align-items: center;
-    /*align-self: center;*/
-
+    justify-content: space-between;
     width: 100%;
-    border: 1px dashed gold;
-
+    /*border: 1px dashed gold;*/
 }
 .header-title {
-    /*align-self: flex-start;*/
-    border: 1px dashed deeppink;
+    font-weight: 700;
+    color: var(--color-white);
+    /*border: 1px dashed deeppink;*/
 }
 .header-nav {
-    /*align-self: flex-end;*/
-    border: 1px dashed orangered;
+    color: var(--color-white);
+    /*border: 1px dashed orangered;*/
 }
 .header-nav ul {
     display: flex;
     flex-direction: row;
     list-style-type: none;
-
+}
+.nav-item {
+    margin-left: 20px;
+}
+.nav-item a {
+    text-decoration: none;
+    color: var(--color-white);
+}
+.nav-item a:hover {
+    cursor: pointer;
 }
 
         /*///////////////
@@ -89,22 +99,22 @@ p {
     display: flex;
     flex-direction: column;
     min-height: 80px;
-    border: 1px dashed orangered;
+    /*border: 1px dashed orangered;*/
 }
 .main-container-top {
-    border: 1px dashed red;
     margin: 20px 40px;
+    /*border: 1px dashed red;*/
 }
 .main-title, .main-subtitle {
     text-align: center;
 }
 .main-container-bottom {
-    border: 1px dashed blue;
     display: flex;
     flex-direction: row;
     column-gap: 30px;
     justify-content: center;
     margin: 0 40px 50px 40px;
+    /*border: 1px dashed blue;*/
 }
 .main-section .item {
     display: flex;
