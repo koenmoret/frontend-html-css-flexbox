@@ -26,7 +26,7 @@
     justify-content: center;
 }
 .opdracht-2 ul li {
-    width:236px;
+    flex-basis: 236px;
 }
 
 /*OPDRACHT 3*/
