@@ -1,1 +1,132 @@
-/*Schrijf hier jouw css*/
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap');
+
+/*////////////////////////////////////////////////////////////////////////
+Table of Contents:
+    1. Global Styles
+    2. Typografie
+    3. Areas
+        3.1 Header
+        3.2 Main
+//////////////////////////////////////////////////////////////////////////*/
+
+/*////////////////////////
+    1. Global Styles
+////////////////////////*/
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+:root {
+    --color-space-cadet: #151E3F;
+    --color-oxford-blue: #030027;
+    --color-beige: #F2F3D9;
+    --color-buff: #DC9E82;
+    --color-old-rose: #C16E70;
+    --color-white: #FFF;
+}
+body {
+    min-height: 100vH;
+    background-color: var(--color-beige);
+}
+/*////////////////////////
+    2. Typography
+////////////////////////*/
+body {
+    font-family: "Poppins", sans-serif;
+}
+h1 {
+    font-size: 24px;
+}
+h3 {
+    font-size: 18px;
+}
+p, span, li  {
+    font-size: 16px;
+}
+
+/*////////////////////////
+   3. Areas
+////////////////////////*/
+        /*///////////////
+        3.1 Header
+        ///////////////*/
+.header-section {
+    display: flex;
+    flex-direction: row;
+    height: 40px;
+    padding: 0 40px;
+    background-color: var(--color-oxford-blue);
+    /*border: 1px dashed orangered;*/
+}
+.header-container {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    /*border: 1px dashed gold;*/
+}
+.header-title {
+    font-weight: 700;
+    color: var(--color-white);
+    /*border: 1px dashed deeppink;*/
+}
+.header-nav {
+    color: var(--color-white);
+    /*border: 1px dashed orangered;*/
+}
+.header-nav ul {
+    display: flex;
+    flex-direction: row;
+    list-style-type: none;
+}
+.nav-item {
+    margin-left: 20px;
+}
+.nav-item a {
+    text-decoration: none;
+    color: var(--color-white);
+}
+.nav-item a:hover {
+    cursor: pointer;
+}
+
+        /*///////////////
+        3.2 Main
+        ///////////////*/
+.main-section{
+    display: flex;
+    flex-direction: column;
+    min-height: 80px;
+    /*border: 1px dashed orangered;*/
+}
+.main-container-top {
+    margin: 20px 40px;
+    /*border: 1px dashed red;*/
+}
+.main-title, .main-subtitle {
+    text-align: center;
+}
+.main-container-bottom {
+    display: flex;
+    flex-direction: row;
+    column-gap: 30px;
+    justify-content: center;
+    margin: 0 40px 50px 40px;
+    /*border: 1px dashed blue;*/
+}
+.main-section .item {
+    display: flex;
+    max-width: 280px;
+    min-height: 350px;
+    padding: 10px;
+    border-radius: 5px;
+    background-color: var(--color-old-rose);
+    flex-grow: 1;
+    flex-shrink: 1;
+}
+.main-section .item p {
+    text-align: center;
+    align-self: flex-end;
+}
